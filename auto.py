@@ -14,8 +14,8 @@ questions/21186327/fill-username-and-
 password-using-selenium-in-python
 """
 # Configuração de Login e senha.
-cpf = "Meu_CPF"
-senha = "Minha_senha"
+cpf = "CPF"
+minhasenha = "senha"
 # Realiza o login na pagina.
 
 
@@ -30,7 +30,7 @@ def logar():
     # usuario
     username.send_keys(cpf)
     # senha
-    senha.send_keys(senha)
+    senha.send_keys(minhasenha)
     senha.send_keys(Keys.ENTER)
     # fecha a pagina do navegador
     navegador.close()
@@ -38,4 +38,5 @@ def logar():
 while(True):
     logar()
     # tempo até o proximo login
+    print ("Executando.. aguardando a próxima autentificação.")
     time.sleep(961)

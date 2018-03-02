@@ -28,8 +28,8 @@ Agora mova o arquivo para o diretorio:
 
 Abra o auto.py e configure:
 
-* cpf(Cpf usado para acessar a intranet)
-* Senha
+* cpf(Cpf usado para acessar a intranet.)
+* minhasenha(sua senha da intranet.)
 
 # Como usuar
 
