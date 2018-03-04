@@ -36,7 +36,13 @@ def logar():
     navegador.close()
 
 while(True):
-    logar()
+	try:
+		logar()
+	except Exception as e:
+		while(rodar):
+			print "Erro na revalidação de autentificação :)."
+		exit()
+   
     # tempo até o proximo login
     print ("Executando.. aguardando a próxima autentificação.")
-    time.sleep(961)
+    time.sleep(1500)

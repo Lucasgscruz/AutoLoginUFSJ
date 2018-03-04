@@ -9,6 +9,15 @@ AutoLogin para sistema de autentificação da UFSJ
 * Biblioteca Selenium..
 * GeckoDriver - Firefox
 
+# Instalação Automática
+
+Execute o aquivo setup.sh no terminal.
+
+> sudo chmod +X setup.sh && ./setup.sh
+
+
+# Instalação Manual
+
 Instalando o Selenium
  > pip install -U selenium
 
