@@ -50,4 +50,4 @@ Execute antes de realizar o login..
 
 # Como Ajudar..
 
-Crie novas versões melhorando a portabilidade e usabilidade.
+Crie novas versões, melhorando a portabilidade e usabilidade.
