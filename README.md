@@ -1,6 +1,7 @@
 # AutoLoginUFSJ
 AutoLogin para sistema de autentificação da UFSJ
 
+* Instalador Automático, testado para Ubuntu 16.04
 * Em desenvolvimento..
 * Funcional.
 
@@ -9,7 +10,7 @@ AutoLogin para sistema de autentificação da UFSJ
 * Biblioteca Selenium..
 * GeckoDriver - Firefox
 
-# Instalação Automática
+# Instalação Automática Para Sistemas Linux
 
 Execute o aquivo setup.sh no terminal.
 
