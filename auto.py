@@ -13,8 +13,10 @@ Referência: https://stackoverflow.com/
 questions/21186327/fill-username-and-
 password-using-selenium-in-python
 """
-cpf = "CPF"
-minhasenha = "senha"
+
+cpf = "10951309609"
+minhasenha = "43631993Mg"
+
 def realizar_conexao():
 	try:
 		f=urllib2.urlopen('https://www.google.com.br',timeout=1)
@@ -32,7 +34,7 @@ def logar():
 		username = navegador.find_element_by_id("ft_un")
 		senha = navegador.find_element_by_id("ft_pd")
 		username.send_keys(cpf)
-		senha.send_keys(minhasenha)
+		senha.send_keys(senha)
 		senha.send_keys(Keys.ENTER)
 	except Exception as e:
 		print "Erro na conexão"
@@ -55,3 +57,4 @@ while(True):
 		print "Conexao Ok, verifição automática em 5 minutos"
 		#DORME POR 5 MINUTOS
 		time.sleep(300)
+
