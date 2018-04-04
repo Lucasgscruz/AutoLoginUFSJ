@@ -14,8 +14,14 @@ questions/21186327/fill-username-and-
 password-using-selenium-in-python
 """
 
-cpf = "10951309609"
-minhasenha = "43631993Mg"
+cpf = ""
+minhasenha = ""
+
+def verifica_senha(senha):
+	"""Verifica a senha digitada"""
+	if(len(senha)<1):
+		print "Erro, Favor preencher o campo de login e senha."
+		exit()
 
 def realizar_conexao():
 	try:
@@ -34,16 +40,17 @@ def logar():
 		username = navegador.find_element_by_id("ft_un")
 		senha = navegador.find_element_by_id("ft_pd")
 		username.send_keys(cpf)
-		senha.send_keys(senha)
+		senha.send_keys(minhasenha)
 		senha.send_keys(Keys.ENTER)
 	except Exception as e:
-		print "Erro na conexão"
+		print "Erro na conexão",e
 		navegador.close()
 		return False
 
-	navegador.close()
+	#navegador.close()
 	return True
 
+verifica_senha(minhasenha)
 while(True):
 	#verifica a permissão para realizar a conexão
 	if realizar_conexao():
