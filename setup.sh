@@ -13,7 +13,7 @@ tar -vzxf geckodriver-v0.19.1-linux64.tar.gz
 echo "Alterando Permissão"
 sudo chmod +X geckodriver
 echo "Instalando Driver"
-sudo mv /usr/local/bin geckodriver
+sudo mv geckodriver /usr/local/bin 
 echo "Driver instalado.."
 echo "Agora configure o auto.py e execute o auto.py"
 echo "Obrigado, Reporte os problemas que encontrar em https://github.com/Exterminus/AutoLoginUFSJ"
