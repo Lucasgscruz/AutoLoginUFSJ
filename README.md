@@ -65,4 +65,6 @@ Execute antes de realizar o login..
 
 
 # Como Ajudar..
-Contribua...
+* Reportar problemas e propor funcionalidade.
+* Forka e melhorar o código.
+* Contribua adcionando issues.
