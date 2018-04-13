@@ -1,9 +1,9 @@
 # AutoLoginUFSJ
-AutoLogin para sistema de autentificação da UFSJ
+AutoLogin para sistema de autentificação da UFSJ v.0.1
 
 * Instalador Automático, testado para Ubuntu 16.04
 * Em desenvolvimento..
-* Testado para conexão utilizando o cabo.
+* Testado para conexão ethernet, via cabo.
 * Funcional.
 
 
