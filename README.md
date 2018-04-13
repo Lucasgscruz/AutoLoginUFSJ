@@ -3,6 +3,7 @@ AutoLogin para sistema de autentificação da UFSJ
 
 * Instalador Automático, testado para Ubuntu 16.04
 * Em desenvolvimento..
+* Testado para conexão utilizando o cabo.
 * Funcional.
 
 
@@ -14,7 +15,7 @@ AutoLogin para sistema de autentificação da UFSJ
 
 Execute o aquivo setup.sh no terminal.
 
-> sudo chmod +X setup.sh && ./setup.sh
+> sudo ./setup.sh
 
 
 # Instalação Manual
@@ -41,12 +42,27 @@ Abra o auto.py e configure:
 * cpf(Cpf usado para acessar a intranet.)
 * minhasenha(sua senha da intranet.)
 
+# Personalizando o comando de login
+
+Você pode criar um alias para facilitar a execução do mesmo via terminal seguindo os seguintes passos:
+* Descompacte o arquivo AutoLoginUFSJ na sua pasta home
+* Edite o arquivo .bashrc que está oculto na sua home.
+* No ubuntu execute:
+> gedit .bashrc
+
+* Adicione a seguinte linha no arquivo
+> alias logar="python AutoLoginUFSJ/auto.py"
+
+* Salve o arquivo.
+* Abra um novo terminal e digite o comando logar.
+
 # Como usuar
 
 Execute no terminal :
 >python auto.py
 
 Execute antes de realizar o login..
+
 
 # Como Ajudar..
 Contribua...
