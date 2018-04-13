@@ -65,6 +65,6 @@ Execute antes de realizar o login..
 
 
 # Como Ajudar..
-* Reportar problemas e propor funcionalidade.
-* Forka e melhorar o código.
+* Reporte problemas e envie sugestões.
+* Exerça o seu direto de fork :) !.
 * Contribua adicionando issues.
