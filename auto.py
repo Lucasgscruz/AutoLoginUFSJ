@@ -35,7 +35,7 @@ def realizar_conexao():
 		return True
 def logar():
 	try:
-		navegador = webdriver.Firefox()
+		navegador = webdriver.PhantomJS()
 		navegador.get("http://g1.com.br")
 		username = navegador.find_element_by_id("ft_un")
 		senha = navegador.find_element_by_id("ft_pd")
@@ -43,11 +43,11 @@ def logar():
 		senha.send_keys(minhasenha)
 		senha.send_keys(Keys.ENTER)
 	except Exception as e:
-		print "Erro na conexão",e
+		print "Fechando o navegador.",e
 		navegador.close()
 		return False
 
-	#navegador.close()
+	navegador.close()
 	return True
 
 verifica_senha(minhasenha)
@@ -58,7 +58,7 @@ while(True):
 		if(logar()):
 			print "Conectado"
 		else:
-			print "Erro no Login"
+			print "Verificando conexão."
 
 	else:
 		print "Conexao Ok, verifição automática em 5 minutos"

@@ -8,10 +8,8 @@ sudo apt install python-pip
 echo "Instalando o selenium"
 sudo python -m pip install selenium
 echo "Baixando O Driver do selenium"
-wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz
-tar -vzxf geckodriver-v0.19.1-linux64.tar.gz
 echo "Alterando Permissão"
-sudo chmod +X geckodriver
+sudo chmod +X phantomjs
 echo "Instalando Driver"
 sudo mv geckodriver /usr/local/bin 
 echo "Driver instalado.."

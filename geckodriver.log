@@ -1,0 +1,11 @@
+1522800702815	geckodriver	INFO	Listening on 127.0.0.1:36854
+1522800703878	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1522800704604	Marionette	INFO	Enabled via --marionette
+1522800707340	Marionette	INFO	Listening on port 42791
+1522800707392	Marionette	WARN	TLS certificate errors will be ignored for this session
+1522800711125	geckodriver	INFO	Listening on 127.0.0.1:40599
+1522800712189	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1522800712950	Marionette	INFO	Enabled via --marionette
+1522800715856	Marionette	INFO	Listening on port 37749
+1522800715906	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
