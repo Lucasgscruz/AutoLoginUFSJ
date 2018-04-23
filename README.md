@@ -9,7 +9,7 @@ AutoLogin para sistema de autentificação da UFSJ v.0.1
 
 # Requisitos
 * Biblioteca Selenium..
-* GeckoDriver - Firefox
+* PhantomDriver
 
 # Instalação Automática Para Sistemas Linux
 
@@ -26,10 +26,10 @@ Instalando o Selenium
 Instalando o Driver..
 
 Baixe o drive em:
-> https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz
+> https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
 
-Descompacte o geckodriver e modifique a permissão de execução do mesmo:
-> chmod +x geckodriver
+Descompacte o arquivo e modifique a permissão de execução do phantom dentro da pasta bin:
+> chmod +x phantomjs
 
 Agora mova o arquivo para o diretorio:
 > /usr/local/bin
