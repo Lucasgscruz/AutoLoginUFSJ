@@ -4,6 +4,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import urllib2
+import os
+
 """
 AutoLogin 0.1
 Necessario a biblioteca selenium...
@@ -13,9 +15,6 @@ Referência: https://stackoverflow.com/
 questions/21186327/fill-username-and-
 password-using-selenium-in-python
 """
-
-cpf = ""
-minhasenha = ""
 
 def verifica_senha(senha):
 	"""Verifica a senha digitada"""
@@ -43,25 +42,32 @@ def logar():
 		senha.send_keys(minhasenha)
 		senha.send_keys(Keys.ENTER)
 	except Exception as e:
-		print "Fechando o navegador.",e
+		print "Fechando o navegador."
 		navegador.close()
 		return False
 
 	navegador.close()
 	return True
 
-verifica_senha(minhasenha)
-while(True):
-	#verifica a permissão para realizar a conexão
-	if realizar_conexao():
-		print "Realizando conexao"
-		if(logar()):
-			print "Conectado"
-		else:
-			print "Verificando conexão."
+if __name__ == '__main__':
+	arquivo = "/opt/autoLogin/config"
+	config = open(arquivo,"r")
+	cpf = config.readline()
+	minhasenha = config.readline()
+	config.close()
 
-	else:
-		print "Conexao Ok, verifição automática em 5 minutos"
-		#DORME POR 5 MINUTOS
-		time.sleep(300)
+	verifica_senha(minhasenha)
+	while(True):
+		#verifica a permissão para realizar a conexão
+		if realizar_conexao():
+			print "Realizando conexao"
+			if(logar()):
+				print "Conectado"
+			else:
+				print "Verificando conexão."
+
+		else:
+			print "Conexao Ok, verificação automática em 5 minutos"
+			#DORME POR 5 MINUTOS
+			time.sleep(300)
 
